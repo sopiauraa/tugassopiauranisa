@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript</title>
+
+    <link rel="stylesheet" href="stylejs.css">
+</head>
+<body>
+    <div  class="kalkulator">
+        <h2>Aritmatika Kalkulator <br>
+            Sederhana</h2> <hr />
+       
+            <input type="number" id="bil1" name="bil1" placeholder="Bilangan pertama"><br>
+            <input type="number" id="bil2" name="bil2" placeholder="Bilangan Kedua"><br>
+            <button type="submit" onclick="tambah()">+</button>
+            <button type="submit" onclick="kurang()">-</button>
+            <button type="submit" onclick="kali()">*</button>
+            <button type="submit" onclick="bagi()">/</button><br> 
+           
+           <table class="hasil" border="none">
+            <tr>
+                <td>
+                    <output type="number" id="hasil"></output>
+                </td>
+            </tr>
+            </table>
+            
+    </div>
+   
+        <script>
+            function tambah(){
+               var bil1 = parseFloat(document.getElementById('bil1').value);
+               var bil2 = parseFloat(document.getElementById('bil2').value);
+               var hasil = bil1+bil2;
+                        (document.getElementById('hasil').textContent= hasil);
+                 }
+
+            function kurang(){
+               var bil1 = parseFloat(document.getElementById('bil1').value);
+               var bil2 = parseFloat(document.getElementById('bil2').value);
+               var hasil = bil1-bil2;
+                        (document.getElementById('hasil').textContent= hasil);
+                 }
+            function kali(){
+               var bil1 = parseFloat(document.getElementById('bil1').value);
+               var bil2 = parseFloat(document.getElementById('bil2').value);
+               var hasil = bil1*bil2;
+                        (document.getElementById('hasil').textContent= hasil);
+                 }
+            function bagi(){
+               var bil1 = parseFloat(document.getElementById('bil1').value);
+               var bil2 = parseFloat(document.getElementById('bil2').value);
+               var hasil = bil1/bil2;
+                        (document.getElementById('hasil').textContent= hasil);
+
+                       
+                 }
+
+
+                
+        </script>
+
+
+    
+</body>
+</html>

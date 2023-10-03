@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formhtml</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <table>
+    <form action="#">
+        <tr class="judul">
+            <th>Isi Biodata</th>
+        </tr>
+
+        <tr>
+            <td><label for="username" aria-required>Nama :</label></td>
+            <td><input type="text" name="username"></td>
+        </tr>
+
+        <tr>
+            <td><label for="nim">Nim :</label></td>
+            <td><input type="text" name="nim"></td>
+        </tr>
+
+        <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="Password" name="password"></td>
+        </tr>
+
+        <tr>
+            <td><label for="email" required>Email :</label></td>
+            <td><input type="text" name="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="tanggal_lahir">Tanggal Lahir:</label></td>
+            <td><input type="date" name="tanggal_lahir"></td>
+        </tr> 
+
+        <tr>
+            <td><label for="gender">Jenis Kelamin :</label></td>
+            <td>
+            <input type="radio" name="gender" id="lk"><label for="lk">Laki-Laki</label>
+            <input type="radio" name="gender" id="pr"><label for="pr">Perempuan</label>
+            </td>
+        </tr>
+
+        <tr>
+        <td><label for="alamat">Alamat :</label></td>
+            <td><textarea name="alamat" id="alamat" cols="30" rows="5"></textarea></td>
+        </tr>
+
+        <tr>
+            <td><label for="jurusan">Jurusan</label></td>
+            <td>
+                <select name="jurusan" id="jurusan">
+                    <option value="S1 teknologi informasi">S1 Teknologi Informasi</option>
+                    <option value="s1 ilmu komputer">S1 Ilmu Komputer</option>
+                </select>
+            </td>
+        </tr>
+
+    
+        <tr>
+            <td><label for="jurusan">Kelas/Kom :</label></td>
+            <td>
+                <select name="kom">
+                    <option value="Kom A">Kom A</option>
+                    <option value="Kom B">Kom B</option>
+                    <option value="Kom C">Kom C</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="bahasa pemrograman yang disukai">Bahasa Pemrograman yang Disukai :</label></td>
+        </tr>
+    
+            <td>
+                <input type="checkbox" name="HTML">HTML<br>
+                <input type="checkbox" name="C">C<br>
+                <input type="checkbox" name="C++">C++<br>
+                <input type="checkbox" name="Javascript">Javascript<br>
+                <input type="checkbox" name="Python">Phyton<br>
+            </td> 
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+
+
+    </table>
+    </form>
+</body>
+</html>
